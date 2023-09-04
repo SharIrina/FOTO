@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+
+.parent{
+    font-size: 25px;
+}
+
+.child-1{
+    font-size: 5vh;
+}
+
+.child-2{
+    font-size: 5vw; /*1вш=1% от раб.обл.,т.е.5%в программе*/
+}
+
+.child-3{
+    font-size: 2em; /*множитель опирает на размер родительского элемента,т.е 18пк*2=36пк*/
+}
+
+.child-4{
+    font-size: 200%;
+    /*будет 50рх,т.е 25пк*200%*/
+}
+
+li{
+    font-size: 0.8rem; /*размер определяется от родителя*/
+}
+
+.block-1{
+    margin: 0 auto; /*по центру*/
+    width: 1000px;
+    height: 1000px;
+    border: 2px solid #000; /*блок создаем с сплошной линией*/
+}
+
+.block-2{
+    margin: calc(50% - 25%)/*опр высотку сверху и снизу*/ auto/*опр ширину сверху и снизу*/;
+    width: 50%;
+    height: 50%;
+    border: 2px solid #ff0000;
+}
+
+h1{
+    color: aqua;
+    margin: 0 auto;
+}
+
